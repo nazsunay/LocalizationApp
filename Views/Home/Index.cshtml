@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+
+<div class="text-center">
+    <h1 class="display-4">@_localization.GetKey("Welcome").Value</h1>
+    <h3>@_localization.GetKey("Hi").Value</h3>
+    <h5>@_localization.GetKey("Localizations").Value</h5>
+</div>
